@@ -38,5 +38,4 @@ public class LionParameterizedTest {
     public void testDoesLionHaveManeException() throws Exception {
         new Lion("", feline);
     }
-
 }
