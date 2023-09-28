@@ -13,17 +13,16 @@ public class LionParameterizedTest {
     static Feline feline;
     private final boolean expected;
 
-    public LionParameterizedTest(String sex, Feline feline, boolean expected) {
+    public LionParameterizedTest(String sex, boolean expected) {
         this.sex = sex;
-        this.feline = feline;
         this.expected = expected;
     }
 
     @Parameterized.Parameters
     public static Object[] getLionSex() {
         return new Object[][] {
-                {"Самец",feline, true},
-                {"Самка",feline, false}
+                {"Самец", true},
+                {"Самка", false}
         };
     }
 
